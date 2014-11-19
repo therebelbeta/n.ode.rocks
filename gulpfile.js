@@ -4,7 +4,7 @@ var rename = require('gulp-rename');
 var less = require('gulp-less');
 var source = require('vinyl-source-stream');
 
-gulp.task('browserify', ['jshint-client'], function() {
+gulp.task('browserify', function() {
   return browserify('./app.js')
     .bundle()
     .pipe(source('bundle.js'))

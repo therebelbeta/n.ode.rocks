@@ -43,10 +43,10 @@ domready(function() {
   //Model
   var Model = new Vue({
       el: '#v-app',
-      template: require('../html/app.html'),
+      template: '', // require('../html/app.html'),
       data: {
         currentRoute: '/',
-        posts: []
+        posts: [],
         projects: []
       },
       methods: {
